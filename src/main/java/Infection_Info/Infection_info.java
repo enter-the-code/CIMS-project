@@ -4,9 +4,9 @@ import java.io.IOException;
 
 public class Infection_info {
 
-    private String infected;
-    private String dead;
-    private String complete;
+    public String infected;
+    public String dead;
+    public String complete;
 
     public Infection_info(String INF, String D, String C) {
         infected = INF;

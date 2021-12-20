@@ -1,5 +1,4 @@
 package com.example;
-
 import javax.swing.*;
 import javax.swing.event.*;
 import java.awt.*;
@@ -7,10 +6,10 @@ import java.awt.event.*;
 import java.util.Scanner;
 
 public class Reservation extends JFrame{
-	
+	JFrame Rframe = new JFrame("잔여 백신 예약");
 	public Reservation()
 	{
-		JFrame Rframe = new JFrame("잔여 백신 예약");
+		
 		Rframe.setLayout(new FlowLayout());
 		
 		Rframe.setSize(300, 400);
@@ -44,10 +43,8 @@ public class Reservation extends JFrame{
 		p.add(time);
 		p.add(tt);
 		
-		
 		JLabel user = new JLabel();
 		user.setText("사용자 정보 입력");
-		
 		
 		//사용자 정보 입력용 패널
 		Panel p2 = new Panel();
@@ -75,12 +72,14 @@ public class Reservation extends JFrame{
 		p2.add(phone);
 		p2.add(phnt);
 		
+		JButton f = new JButton("처음으로");
+		f.setPreferredSize(new Dimension(130, 50));
+		
 		Rframe.add(date);
 		Rframe.add(p);
 		Rframe.add(user);
 		Rframe.add(p2);
-		
-		
+		Rframe.add(f);
 		
 
         Dimension frameSize = Rframe.getSize();
@@ -89,6 +88,15 @@ public class Reservation extends JFrame{
                 (windowSize.height - frameSize.height) / 2); //화면 중앙에 띄우기
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         Rframe.setVisible(true);
+        
+        f.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent e)
+			{
+				new UI();
+				Rframe.setVisible(false);
+			}
+		});
 	}
 
 }
