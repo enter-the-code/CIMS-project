@@ -1,6 +1,6 @@
 package Residue_Vaccine;
 
-import Participant.User;
+import Participant.user;
 
 public class Reservation {
 
@@ -9,7 +9,7 @@ public class Reservation {
 	private int day;
 	private int hour;
 	//private Reservation_List list = new Reservation_List();
-	private User u1 = new User("test_name", "test_id", "test_pw", "test_phone");
+	private user u1 = new user("test_name", "test_id", "test_pw", "test_phone");
 
 	public Reservation(int year, int month, int day, int hour)
 	{
