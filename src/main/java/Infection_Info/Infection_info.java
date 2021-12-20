@@ -1,4 +1,4 @@
-package com.example;
+package Infection_Info;
 
 import java.io.IOException;
 
@@ -22,23 +22,6 @@ public class Infection_info {
     public String toString() {
 
         return "확진자->" + infected + "\n" + "사망인원수->" + dead + "\n" + "완치자 수->" + complete;
-
-    }
-
-}
-
-class guang extends Infection_info {
-
-    public guang(String INF, String D, String C) throws IOException, InterruptedException {
-        super(INF, D, C);
-
-    }
-}
-
-class minimum extends guang {
-
-    public minimum(String INF, String D, String C) throws IOException, InterruptedException {
-        super(INF, D, C);
 
     }
 

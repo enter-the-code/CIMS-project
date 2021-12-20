@@ -8,6 +8,8 @@ public class App {
         man.Manage_info();
         //man.show_all();
         man.show_all_gang();
+        //man.show_daegu();
+        //UI a=new UI();
 
     }
 
