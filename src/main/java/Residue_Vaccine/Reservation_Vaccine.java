@@ -2,21 +2,46 @@ package Residue_Vaccine;
 
 import Participant.user;
 
-public class Reservation {
+public class Reservation_Vaccine {
 
-	private int year;
-	private int month;
-	private int day;
-	private int hour;
-	//private Reservation_List list = new Reservation_List();
-	private user u1 = new user("test_name", "test_id", "test_pw", "test_phone");
+	private String year;
+	private String month;
+	private String day;
+	private String hour;
 
-	public Reservation(int year, int month, int day, int hour)
+	private user USER ;
+	
+	
+	public Reservation_Vaccine(String year, String month, String day, String hour)
 	{
 		this.year= year;
 		this.month= month;
 		this.day=day;
 		this.hour=hour;
 	}
+	
+	public void make_user(user temp)
+	{
+		this.USER=temp;
+	}
 
+	public user getU1() {
+		return USER;
+	}
+
+	public String getYear() {
+		return year;
+	}
+
+	public String getMonth() {
+		return month;
+	}
+
+	public String getDay() {
+		return day;
+	}
+
+	public String getHour() {
+		return hour;
+	}
 }
