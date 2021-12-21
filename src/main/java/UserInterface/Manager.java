@@ -1,7 +1,4 @@
-package Participant;
-import UserInterface.UI;
-import UserInterface.show_all_appointment;
-
+package UserInterface;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
