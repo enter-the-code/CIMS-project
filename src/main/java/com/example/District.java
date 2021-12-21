@@ -1,9 +1,9 @@
 package com.example;
+import UserInterface.UI;
+
 import javax.swing.*;
-import javax.swing.event.*;
 import java.awt.*;
 import java.awt.event.*;
-import java.util.Scanner;
 import java.util.Vector;
 
 public class District extends JFrame{

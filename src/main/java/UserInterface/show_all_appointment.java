@@ -1,4 +1,4 @@
-package com.example;
+package UserInterface;
 
 import Residue_Vaccine.Reservation_List;
 

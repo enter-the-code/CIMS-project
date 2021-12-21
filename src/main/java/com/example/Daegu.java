@@ -1,12 +1,11 @@
 package com.example;
 import javax.swing.*;
-import javax.swing.event.*;
 
 import Infection_Info.guang;
+import UserInterface.UI;
 
 import java.awt.*;
 import java.awt.event.*;
-import java.util.Scanner;
 
 public class Daegu extends JFrame{
 	JFrame Dframe = new JFrame("대구시 확진자/사망자/완치자 현황");

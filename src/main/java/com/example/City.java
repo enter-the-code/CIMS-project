@@ -1,14 +1,12 @@
 package com.example;
 import javax.swing.*;
-import javax.swing.event.*;
 
 import Infection_Info.guang;
+import UserInterface.UI;
 
 import java.awt.*;
 import java.awt.event.*;
-import java.util.HashMap;
 import java.util.LinkedHashMap;
-import java.util.Scanner;
 
 public class City extends JFrame{
 	JFrame ciframe = new JFrame("시별 확진자 정보");
